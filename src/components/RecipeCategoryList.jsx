@@ -1,5 +1,7 @@
 import RecipeCategory from './RecipeCategory';
 import { recipes } from '../data';
+import recipeDeveloperImg from '../img/app/cabin-cafe-chef.jpg';
+import recipeCategoryHeroImg from '../img/app/recipe-category-hero.jpg';
 
 const recipeCategorys = [...new Set(recipes.map(recipe => recipe.category))];
 
@@ -11,12 +13,15 @@ function RecipeCategoryList({
   return (
     <div
       className="recipe-category-container"
-      style={{ minHeight: `calc(100vh - ${headingHeight + 1}px)` }}
+      style={{
+        minHeight: `calc(100vh - ${headingHeight + 1}px)`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${recipeCategoryHeroImg}) no-repeat`,
+      }}
     >
       <div className="recipe-developer-container">
         <div>
           <img
-            src="src/img/app/cabin-cafe-chef.jpg"
+            src={recipeDeveloperImg}
             alt="Allen Smith"
             className="recipe-developer"
           />

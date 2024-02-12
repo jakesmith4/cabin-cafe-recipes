@@ -356,10 +356,11 @@ img {
   border: 2px solid var(--white);
 }
 
-.recipe-category-container {
+/* THIS WAS THE WAY I WAS DOING IT BUT HAD TO SWITCH TO USING INLINE STYLES BECAUASE IT WASN'T WORKING IN NETLIFY */
+/* .recipe-category-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('src/img/app/recipe-category-hero.jpg') no-repeat;
-}
+} */
 
 .recipe-category-list {
   margin: 0;
