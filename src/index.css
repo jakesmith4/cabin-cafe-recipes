@@ -510,12 +510,19 @@ img {
 
 .single-recipe-icons-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.3rem;
 }
 
 .single-recipe-info {
   margin-top: 6.5rem;
+}
+
+@media screen and (min-width: 440px) {
+  .single-recipe-icons-item {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 564px) {
