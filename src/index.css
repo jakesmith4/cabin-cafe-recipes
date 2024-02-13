@@ -368,6 +368,10 @@ img {
     url('src/img/app/recipe-category-hero.jpg') no-repeat;
 } */
 
+.recipe-category-container {
+  position: relative;
+}
+
 .recipe-category-list {
   margin: 0;
   color: var(--white);
@@ -387,6 +391,38 @@ img {
 .recipe-list {
   min-height: 100vh;
   padding-bottom: 2rem;
+}
+
+.app-developer-container {
+  position: absolute;
+  color: var(--white);
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.app-developer-heading {
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+.app-developer-container > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  color: var(--white);
+}
+
+.app-developer {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.app-developer-name {
+  font-size: 0.8rem;
 }
 
 .category-heading {
