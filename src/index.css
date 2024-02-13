@@ -306,13 +306,19 @@ img {
   color: var(--white);
   box-shadow: var(--shadow-4);
   position: fixed;
-  top: 5rem;
+  top: 8.5rem;
   z-index: 1;
+}
+
+@media screen and (min-width: 446px) {
+  .back-btn {
+    top: 4.5rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .back-btn {
-    top: 6rem;
+    top: 5.7rem;
   }
 }
 
@@ -392,7 +398,13 @@ img {
   margin: 0 auto;
   opacity: 0.8;
   margin-bottom: 1rem;
-  padding-top: 4.5rem;
+  padding-top: 8.5rem;
+}
+
+@media screen and (min-width: 446px) {
+  .category-heading {
+    padding-top: 4.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
