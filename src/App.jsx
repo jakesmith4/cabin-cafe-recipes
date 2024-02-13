@@ -52,9 +52,7 @@ export default function App() {
   return (
     <div className="App">
       <h1
-        className={
-          showRecipes || showSingleRecipe ? 'heading fixed-heading' : 'heading'
-        }
+        className={showRecipes ? 'heading fixed-heading' : 'heading'}
         ref={elementRef}
       >
         Cabin Cafe Recipes
