@@ -396,7 +396,7 @@ img {
 .app-developer-container {
   position: absolute;
   color: var(--white);
-  bottom: 2rem;
+  bottom: 4rem;
   left: 50%;
   transform: translate(-50%);
 }
@@ -423,6 +423,12 @@ img {
 
 .app-developer-name {
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+  .app-developer-container {
+    bottom: 2rem;
+  }
 }
 
 .category-heading {
